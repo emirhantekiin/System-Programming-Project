@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: sis-db
+    environment:
+      POSTGRES_DB: sis
+      POSTGRES_USER: sis_user
+      POSTGRES_PASSWORD: sis_pass
+    volumes:
+      - sis_db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    container_name: sis-app
+    depends_on:
+      - db
+
+volumes:
+  sis_db_data:
