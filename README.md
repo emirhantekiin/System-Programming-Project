@@ -31,3 +31,11 @@ and a PostgreSQL database container.
 
 ## Project Status
 Initial setup phase.
+
+
+## Week 3 – PostgreSQL Integration
+
+- PostgreSQL container added with healthcheck
+- C++ application connects to PostgreSQL using libpqxx
+- Connection verified via dummy connection
+
