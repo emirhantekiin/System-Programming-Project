@@ -76,6 +76,33 @@ The Docker image was built and executed successfully using the following command
 docker build -t sis-app .
 docker run sis-app
 ```
+## Version Control Usage
+All development activities during this phase were managed using Git and GitHub.
+
+- A branch-based development workflow was followed.
+- New features and configuration changes were implemented in separate branches.
+- Pull Requests were used to merge changes into the main branch.
+- Clear and descriptive commit messages were written.
+- Code reviews were performed before merging.
+
+This version control strategy ensured collaboration, traceability, and code quality throughout the project.
+
+---
+
+## Results
+- The Docker environment was successfully configured.
+- The C++ application was containerized and executed inside a Docker container.
+- Required build tools and dependencies were installed correctly.
+- The application ran consistently across different environments using Docker.
+- The project repository structure was prepared for multi-container integration in later weeks.
+
+---
+
+## Conclusion
+This phase of the project successfully established a solid foundation using Docker and Git-based version control.  
+Containerization improved portability and reproducibility, while structured version control practices ensured organized and collaborative development.  
+These results prepared the project for database integration and full system deployment in subsequent weeks.
+
 
 ## Week 3 – PostgreSQL Integration Report
 
