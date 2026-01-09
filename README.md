@@ -139,6 +139,7 @@ System behavior was verified using Docker container logs and status checks.
 Application logs were inspected using:
 ```bash
 docker logs sis-app-v2
+```
 
 ## Results
 - PostgreSQL container started successfully and passed the health check.
