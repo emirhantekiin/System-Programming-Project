@@ -24,6 +24,20 @@ and a PostgreSQL database container.
 - Update student data
 - Delete student data
 
+## Docker Hub
+
+An optional Docker image for the C++ application container is available on Docker Hub:
+
+https://hub.docker.com/r/emirhantekin/sis-app
+
+This image represents the application container used in the project.  
+However, the project is primarily designed to be built and executed locally using Docker Compose.
+
+To pull the image manually (optional):
+
+```bash
+docker pull emirhantekin/sis-app:latest
+
 ## Development Process
 - Branch-based development strategy is used.
 - All changes are made via Pull Requests.
