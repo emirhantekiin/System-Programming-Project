@@ -58,7 +58,6 @@ The application simulates a PostgreSQL connection to verify Docker and dependenc
 
 ```cpp
 std::cout << "Dummy PostgreSQL connection successful (Week 3)" << std::endl;
----
 
 ## Week 4 – Application and Database Integration Report
 
