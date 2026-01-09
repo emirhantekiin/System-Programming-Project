@@ -75,6 +75,7 @@ The Docker image was built and executed successfully using the following command
 ```bash
 docker build -t sis-app .
 docker run sis-app
+```
 
 ## Week 3 – PostgreSQL Integration Report
 
