@@ -58,8 +58,56 @@ The application simulates a PostgreSQL connection to verify Docker and dependenc
 
 ```cpp
 std::cout << "Dummy PostgreSQL connection successful (Week 3)" << std::endl;
-```
 
+```
+## Week 4 – Application and Database Integration Report
+
+### Objective
+The objective of Week 4 was to complete the full integration between the C++ application and the PostgreSQL database and to verify that the system works correctly as a complete containerized application.
+
+---
+
+### System Architecture
+The system consists of two Docker containers managed using Docker Compose:
+
+- **PostgreSQL Database Container**  
+  Responsible for storing student information and initializing the database using an `init.sql` script.
+
+- **C++ Application Container**  
+  A command-line application that connects to the PostgreSQL database using the `libpqxx` library and executes SQL queries.
+
+The containers communicate over Docker’s internal network using the service name `db`.
+
+---
+
+### Database Initialization
+The PostgreSQL database is automatically initialized during the first startup of the container.  
+The `init.sql` script performs the following operations:
+
+- Creates the `students` table
+- Inserts sample student data
+
+This ensures that the database schema and initial records are available without any manual setup.
+
+---
+
+### Application–Database Connection
+The C++ application establishes a connection to the PostgreSQL database using the following configuration:
+
+- Host: `db`
+- Port: `5432`
+- Database name: `sis_user`
+- User: `sis_user`
+
+The successful connection is confirmed by log messages printed to the console from the application container.
+
+---
+
+### Data Retrieval Test
+After establishing the connection, the application executes the following SQL query:
+
+```sql
+SELECT * FROM students;
 
 
 
