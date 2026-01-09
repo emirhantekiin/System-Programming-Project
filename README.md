@@ -108,10 +108,77 @@ After establishing the connection, the application executes the following SQL qu
 
 ```sql
 SELECT * FROM students;
+```
+CRUD Operations Demonstration
 
+In addition to data retrieval, basic CRUD-related operations were demonstrated to further validate database interaction capabilities.
 
+Insert Operation:
+A new test student record was inserted into the database using an SQL INSERT command executed from the C++ application.
 
+Delete Operation:
+The inserted test record was removed using an SQL DELETE command.
 
+These operations prove that the application can both read from and write to the database.
+
+Error Handling and Validation
+
+Basic error handling mechanisms were implemented in the C++ application using exception handling provided by the libpqxx library.
+
+Database connection errors are captured and printed to the console.
+
+SQL execution errors are handled gracefully.
+
+Connection status is verified before executing database operations.
+
+This improves the robustness and stability of the system.
+
+Logging and Verification
+
+System behavior was verified using Docker container logs and status checks.
+
+Application logs were inspected using:
+
+docker logs sis-app-v2
+
+Container status and health were verified using:
+
+docker ps
+The logs confirmed successful database connections and correct execution of SQL queries.
+Docker Commands Used
+
+The following Docker commands were used during Week 4 to build, run, and verify the system:
+
+docker compose up -d --build
+docker ps
+docker logs sis-app-v2
+
+Results
+
+PostgreSQL container started successfully and passed the health check.
+
+Database tables and sample data were created using init.sql.
+
+The C++ application connected to the database without errors.
+
+Student records were retrieved, inserted, and deleted successfully.
+
+Version Control and Collaboration
+
+All Week 4 developments were carried out using a branch-based Git workflow.
+
+Feature branches were used for development.
+
+Pull Requests were created to merge changes into the main branch.
+
+Clear and descriptive commit messages were used.
+
+This ensured traceability and code quality throughout the development process.
+
+Conclusion
+
+Week 4 successfully demonstrates a fully working containerized Student Information System.
+The integration between Docker, PostgreSQL, and the C++ application was completed, and database operations were verified through real-time application output.
 
 
 
