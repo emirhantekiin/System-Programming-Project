@@ -34,6 +34,48 @@ Initial setup phase.
 
 ---
 
+# Week 2 – Docker Setup and Containerization Report
+
+## Objective
+The objective of Week 2 was to introduce Docker technology into the project and prepare the system for container-based development. The focus was on creating the Docker environment, configuring Dockerfiles, and understanding container behavior.
+
+---
+
+## Work Completed
+During Week 2, the following tasks were completed:
+
+- Docker was installed and configured on the development environment.
+- A Dockerfile was created for the C++ application.
+- The base operating system image (Ubuntu) was selected.
+- Required build tools were installed inside the container:
+  - g++
+  - make
+  - cmake
+- The C++ application was successfully compiled inside the Docker container.
+- Basic container lifecycle commands were tested (`build`, `run`, `stop`).
+
+---
+
+## Dockerfile Configuration
+A Dockerfile was prepared to containerize the C++ application.  
+The Dockerfile defines:
+
+- The base image
+- Required build dependencies
+- Build steps for the C++ project
+- The default command executed when the container starts
+
+This ensured that the application could be built and run consistently across different environments.
+
+---
+
+## Container Execution Test
+The Docker image was built and executed successfully using the following commands:
+
+```bash
+docker build -t sis-app .
+docker run sis-app
+
 ## Week 3 – PostgreSQL Integration Report
 
 ### Objective
