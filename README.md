@@ -47,7 +47,7 @@ docker pull emirhantekin/sis-app:latest
 Initial setup phase.
 
 ---
-
+```
 # Week 2 – Docker Setup and Containerization Report
 
 ## Objective
