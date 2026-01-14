@@ -13,10 +13,6 @@ Linux / Windows / macOS
 
 INSTALLATION STEPS
 
-Clone the repository
-
-git clone https://github.com/emirhantekin/System-Programming-Project.git
-
 cd System-Programming-Project
 
 Build and run with Docker Compose
